@@ -1,0 +1,29 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/admin",
+      "mountPath": "/api",
+      "method": "GET",
+      "module": [
+        "api/admin.js:onRequestGet"
+      ]
+    },
+    {
+      "routePath": "/api/admin",
+      "mountPath": "/api",
+      "method": "OPTIONS",
+      "module": [
+        "api/admin.js:onRequestOptions"
+      ]
+    },
+    {
+      "routePath": "/api/admin",
+      "mountPath": "/api",
+      "method": "POST",
+      "module": [
+        "api/admin.js:onRequestPost"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}
